@@ -35,7 +35,7 @@ function listaPage(feedbacks) {
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1>Feedbacks</h1>
+  <h1>Feedbacks <span id="contador">(${feedbacks.length})</span></h1>
   ${feedbacks.length === 0 ? '<p>Nenhum feedback ainda.</p>' : `<ul>${itens}</ul>`}
   <a href="/">Enviar novo feedback</a>
 </body>
